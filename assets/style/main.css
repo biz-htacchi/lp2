@@ -45,10 +45,11 @@ li {
   position: relative;
   width: 100%;
   aspect-ratio: 390/577;
+  height: auto
 }
 @media (min-width: 768px) {
   .main-visual {
-    height: 72rem;
+    aspect-ratio: 1500/720;
   }
 }
 
@@ -64,7 +65,7 @@ li {
 
 @media (min-width: 768px) {
   .main-visual__image {
-    height: 72rem;
+    height: auto;
   }
 }
 
