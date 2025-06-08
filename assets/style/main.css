@@ -256,6 +256,86 @@ li {
 }
 
 
+/* 紹介
+--------------------------------------------------- */
+.product-introduction {
+    background-image: url(/assets/image/keepYourSkinBeautiful_sp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 68rem;
+}
+@media (min-width: 768px) {
+    .product-introduction {
+        background-image: url(/assets/image/keepYourSkinBeautiful_pc.jpg);
+        height: 55rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .product-introduction__container {
+        max-width: 120rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end
+    }
+}
+
+.product-introduction__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.6rem;
+    padding-top: 2.8rem;
+}
+@media (min-width: 768px) {
+    .product-introduction__text-container {
+        width: 46.7rem;
+        align-items: flex-start;
+        margin: 8.4rem 5.4rem 0 0;
+        padding-right: 3.7rem;
+    }
+}
+
+.product-introduction__title{
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: calc(54/30);
+    color: #FFFFFF;
+    padding-top: 1.3rem;
+}
+@media (min-width: 768px) {
+    .product-introduction__title {
+        font-size: 3.8rem;
+        line-height: calc(54/38);
+    }
+}
+
+.product-introduction__subtitle{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: calc(36/24);
+    color: #FFFFFF;
+}
+@media (min-width: 768px) {
+    .product-introduction__subtitle {
+        line-height: calc(46/24);
+    }
+}
+
+.product-introduction__text{
+    font-size: 1.4rem;
+    line-height: calc(32/14);
+    color: #FFFFFF;
+}
+@media (min-width: 768px) {
+    .product-introduction__text {
+        margin-top: 1.2rem;
+    }
+}
+
 /* フッター
 --------------------------------------------------- */
 
