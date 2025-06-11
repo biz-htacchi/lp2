@@ -41,9 +41,5 @@ $(document).ready(function() {
 
         // クリックされた質問に 'open' クラスをトグルで追加・削除する
         $(this).toggleClass("open");
-
-        // 他の開いている質問があれば閉じる
-        $(".q-and-a__accordion-qa .q-and-a__question").not(this).removeClass("open");
-        $(".q-and-a__accordion-qa .q-and-a__answer").not($(this).next(".q-and-a__answer")).slideUp("fast");
     });
 });
