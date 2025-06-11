@@ -56,6 +56,7 @@ li {
 @media (min-width: 768px) {
     .main-visual {
         aspect-ratio: 1500/720;
+        max-height: initial;
     }
 }
 
@@ -279,6 +280,18 @@ li {
 
 }
 
+/* ホバー時のスタイル */
+.shop-button-group__btn-online-shop:hover{
+    color: #46C4DB;
+    background-color: #ffffff;
+    border: .2rem solid #46C4DB;
+}
+
+.shop-button-group__btn-purchase:hover{
+    color: #5DD5AB;
+    background-color: #ffffff;
+    border: .2rem solid #5DD5AB;
+}
 
 /* 紹介
 --------------------------------------------------- */
