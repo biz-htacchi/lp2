@@ -180,14 +180,14 @@ li {
     }
 }
 
-.shop-button-group__item {
+.shop-button-group__section-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.1rem 0 2rem .2rem;
 }
 @media (min-width: 768px) {
-    .shop-button-group__item {
+    .shop-button-group__section-title {
         align-items: flex-start;
     }
 }
@@ -341,12 +341,12 @@ li {
 --------------------------------------------------- */
 .customer-voice {
     position: relative;
-    margin: 5.35rem 0;
+    margin: 5.35rem 0 7.5rem;
     padding: 0 .6rem;
 }
 @media (min-width: 768px) {
     .customer-voice {
-        margin: 9.3rem auto;
+        margin: 9.3rem auto 11.3rem;
         max-width: 120rem;
     }
 }
@@ -514,6 +514,189 @@ li {
     }
     .customer-voice__carousel-button-next{
         right: 1.83%;
+    }
+}
+
+/* Accordions
+--------------------------------------------------- */
+.q-and-a {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #f4ffe8, #C6f0FE);
+    padding-bottom: 3.35rem;
+}
+@media (min-width: 768px) {
+    .q-and-a {
+        padding-bottom: 4.2rem;
+    }
+}
+
+.q-and-a__section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.55rem 0 1.2rem .25rem;
+}
+@media (min-width: 768px) {
+    .q-and-a__section-title {
+        padding-top: 5.3rem;
+        padding-bottom: 1.3rem;
+    }
+}
+
+.q-and-a__title{
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: calc(32/30);
+    letter-spacing: .14rem;
+}
+@media (min-width: 768px) {
+    .q-and-a__title {
+        font-size: 4.5rem;
+        line-height: calc(32/45);
+        letter-spacing: .2rem;
+    }
+}
+
+.q-and-a__subtitle{
+    font-size: 1.6rem;
+    line-height: calc(32/16);
+    margin-top: .25rem;
+    letter-spacing: .09rem;
+}
+@media (min-width: 768px) {
+    .q-and-a__subtitle {
+        font-size: 2rem;
+        line-height: calc(32/20);
+        letter-spacing: .12rem;
+        margin-top: 1.95rem;
+    }
+}
+
+.q-and-a__accordion-container {
+    margin: 0 1.6rem;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .q-and-a__accordion-container {
+        width: 100%;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+}
+
+/* 質問（dt）のスタイル */
+.q-and-a__question,
+.q-and-a__answer {
+    position: relative;
+    display: flex; /* フレックスボックスを使用 */
+    background-color: #ffffff;
+    padding: 1.42rem 1.4rem 1.3rem;
+    cursor: pointer;
+}
+
+.q-and-a__question{
+    margin-top: 2.08rem;
+}
+@media (min-width: 768px) {
+    .q-and-a__question {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        padding-left: 2.2rem;
+        padding-bottom: 1.65rem;
+    }
+}
+
+/* 回答（dd）のスタイル - 初期状態は非表示 */
+.q-and-a__answer {
+    margin-top: -.6rem;
+    padding-top: 0;
+    padding-bottom: 1.4rem;
+}
+@media (min-width: 768px) {
+    .q-and-a__answer {
+        margin-top: -.4rem;
+        padding-left: 2.2rem;
+    }
+}
+
+.q-and-a__question-prefix,
+.q-and-a__answer-prefix {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: calc(32/16);
+    color: #444444;
+    margin-left: .2rem;
+}
+@media (min-width: 768px) {
+    .q-and-a__question-prefix,
+    .q-and-a__answer-prefix {
+        font-size: 1.8rem;
+        line-height: calc(32/18);
+    }
+
+    .q-and-a__answer-prefix {
+        padding-top: .2rem;
+    }
+}
+
+.q-and-a__question-text,
+.q-and-a__answer-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: calc(28/15);
+    color: #444444;
+    margin: .25rem 1.2rem;
+}
+
+.q-and-a__answer-text {
+    margin-left: 1.3rem;
+    margin-right: 0;
+    padding-bottom: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    .q-and-a__question-text,
+    .q-and-a__answer-text {
+        margin-left: 1.7rem;
+        padding-right: 1.2rem;
+    }
+
+    .q-and-a__answer-text {
+        margin-bottom: -.65rem;
+    }
+}
+
+.q-and-a__question-toggle{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 24%;
+    right: 4.1%;
+}
+@media (min-width: 768px) {
+    .q-and-a__question-toggle {
+        font-size: 1.6rem;
+        top: 34%;
+        right: 3.8%;
+    }
+}
+
+/* 開いている質問にアイコンを変更 */
+.q-and-a__question.open .bi-caret-down-fill {
+    display: inline-block;
+    transform: rotate(180deg); /* 矢印アイコンの回転 */
+}
+
+.q-and-a__question.open .q-and-a__question-toggle {
+    top: 26.5%;
+    right: 4%;
+}
+@media (min-width: 768px) {
+    .q-and-a__question.open .q-and-a__question-toggle {
+        top: 40%;
+        right: 3.8%;
     }
 }
 
