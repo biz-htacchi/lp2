@@ -5,6 +5,7 @@
 /* デフォルトのサイズを10pxに指定 */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth; /* スムーズスクロール */
 }
 
 @media (max-width: 358px) {
