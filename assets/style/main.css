@@ -153,12 +153,20 @@ li {
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
+.shop-button-group--bottom{
+    padding-top: 1.85rem;
+}
 @media (min-width: 768px) {
     .shop-button-group {
         max-width: 120rem;
         margin: 4.8rem auto;
     }
+    .shop-button-group--bottom {
+        padding-top: 0;
+    }
 }
+
+
 
 .shop-button-group__container {
     display: flex;
@@ -175,8 +183,7 @@ li {
         justify-content: center;
         margin: 0 10rem;
         gap: 3.2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem;
     }
 }
 
@@ -196,6 +203,7 @@ li {
     font-size: 1.8rem;
     line-height: calc(26/18);
     letter-spacing: .18rem;
+    color: #111111;
 }
 @media (min-width: 768px) {
     .shop-button-group__title {
@@ -702,4 +710,91 @@ li {
 
 /* フッター
 --------------------------------------------------- */
+.footer {
+    background-color: #0071CE;
+    padding: 2.4rem 0;
+}
+@media (min-width: 768px) {
+    .footer {
+        padding: 3.2rem 0;
+    }
+}
 
+.footer__container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .footer__container {
+        max-width: 120rem;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.6rem;
+    }
+}
+
+.footer__logo{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 2.8rem;
+    line-height: calc(35/28);
+    letter-spacing: .55rem;
+    color: #FFFFFF;
+    padding-left: .6rem;
+}
+@media (min-width: 768px) {
+    .footer__logo {
+        font-size: 3.2rem;
+        line-height: calc(40/32);
+        letter-spacing: .64rem;
+    }
+
+}
+
+.footer__nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1.6rem;
+    justify-content: space-around;
+    margin: 2rem 1.4rem 2.4rem;
+}
+@media (min-width: 768px) {
+    .footer__nav-list {
+        margin: 0;
+        padding: 0 0 .2rem 4.4rem;
+        justify-content: flex-start;
+        gap: 3.2rem;
+    }
+}
+
+.footer__nav-link{
+    font-size: 1.2rem;
+    line-height: calc(17/12);
+    color: #FFFFFF;
+}
+@media (min-width: 768px) {
+    .footer__nav-link {
+        font-size: 1.4rem;
+        line-height: calc(20/14);
+    }
+}
+
+.footer__copyright{
+    font-size: 1.1rem;
+    line-height: calc(16/11);
+    color: #FFFFFF;
+    margin-top: .1px;
+}
+@media (min-width: 768px) {
+    .footer__copyright {
+        font-size: 1.2rem;
+        line-height: calc(17/12);
+        padding-top: .5rem;
+        padding-right: .6rem;
+    }
+
+}
