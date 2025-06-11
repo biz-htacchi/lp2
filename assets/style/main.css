@@ -51,6 +51,7 @@ li {
     width: 100%;
     aspect-ratio: 390/577;
     height: auto;
+    max-height: 90rem;
 }
 @media (min-width: 768px) {
     .main-visual {
@@ -739,6 +740,7 @@ li {
 .footer__container {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
     margin: 0 auto;
