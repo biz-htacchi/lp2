@@ -160,13 +160,12 @@ li {
     .shop-button-group {
         max-width: 120rem;
         margin: 4.8rem auto;
+        padding: 0 1.6rem;
     }
     .shop-button-group--bottom {
         padding-top: 0;
     }
 }
-
-
 
 .shop-button-group__container {
     display: flex;
@@ -181,7 +180,7 @@ li {
     .shop-button-group__container {
         flex-direction: row;
         justify-content: center;
-        margin: 0 10rem;
+        margin: 0 8.4rem;
         gap: 3.2rem;
         padding: 2rem;
     }
@@ -711,6 +710,7 @@ li {
 /* フッター
 --------------------------------------------------- */
 .footer {
+    position: relative;
     background-color: #0071CE;
     padding: 2.4rem 0;
 }
@@ -725,15 +725,15 @@ li {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin: 0 auto;
 }
 @media (min-width: 768px) {
     .footer__container {
-        max-width: 120rem;
-        margin: 0 auto;
+        max-width: 123.2rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 2.6rem;
+        padding: 0 4.2rem;
     }
 }
 
@@ -752,6 +752,12 @@ li {
         letter-spacing: .64rem;
     }
 
+}
+
+.footer__nav {
+    width: 100%;
+    max-width: 39rem;
+    margin: 0 auto;
 }
 
 .footer__nav-list{
@@ -796,5 +802,29 @@ li {
         padding-top: .5rem;
         padding-right: .6rem;
     }
+}
 
+/* ページトップへ戻るボタン */
+.footer__back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    bottom: 14.2rem;
+    right: 1.6rem;
+    width: 4rem;
+    height: 4rem;
+    color: #ffffff;
+    background-color: #0071CE;
+    font-size: 3.2rem;
+    padding-bottom: .4rem;
+}
+@media (min-width: 768px) {
+    .footer__back-to-top {
+        top: -7.2rem;
+        bottom: 0rem;
+        right: 0;
+        margin-right: 1.6rem;
+    }
 }
