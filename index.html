@@ -19,9 +19,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 
-        <!-- fontawesome -->
-        <script src="https://kit.fontawesome.com/3ea11fe6fa.js" crossorigin="anonymous"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
@@ -68,6 +70,55 @@
             </section>
 
             <section class="customer-voice">
+                <div class="customer-voice__container">
+                    <h2 class="customer-voice__title">Voices</h2>
+                    <p class="customer-voice__subtitle">お客様の声</p>
+                </div>
+                <div class="customer-voice__carousel-wrapper">
+                    <div class="swiper customer-voice__carousel">
+                        <div class="swiper-wrapper customer-voice__slides">
+                            <div class="swiper-slide customer-voice__slide">
+                                <img class="customer-voice__image" src="/assets/image/voices_a.png" alt="">
+                                <p class="customer-voice__name">Aさん</p>
+                                <p class="customer-voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            </div>
+                            <div class="swiper-slide customer-voice__slide">
+                                <img class="customer-voice__image" src="/assets/image/voices_b.png" alt="">
+                                <p class="customer-voice__name">Bさん</p>
+                                <p class="customer-voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            </div>
+                            <div class="swiper-slide customer-voice__slide">
+                                <img class="customer-voice__image" src="/assets/image/voices_c.png" alt="">
+                                <p class="customer-voice__name">Cさん</p>
+                                <p class="customer-voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            </div>
+                            <div class="swiper-slide customer-voice__slide">
+                                <img class="customer-voice__image" src="/assets/image/voices_d.png" alt="">
+                                <p class="customer-voice__name">Dさん</p>
+                                <p class="customer-voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            </div>
+                            <div class="swiper-slide customer-voice__slide">
+                                <img class="customer-voice__image" src="/assets/image/voices_e.png" alt="">
+                                <p class="customer-voice__name">Eさん</p>
+                                <p class="customer-voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            </div>
+                            <div class="swiper-slide customer-voice__slide">
+                                <img class="customer-voice__image" src="/assets/image/voices_f.png" alt="">
+                                <p class="customer-voice__name">Fさん</p>
+                                <p class="customer-voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination customer-voice__carousel-pagination"></div>
+                <div class="swiper-button-prev customer-voice__carousel-button-prev">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                </div>
+                <div class="swiper-button-next customer-voice__carousel-button-next">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </div>
+
             </section>
 
             <section class="q-and-a">
@@ -82,6 +133,8 @@
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- JSファイル -->
         <script src="/assets/script/main.js"></script>
     </body>
