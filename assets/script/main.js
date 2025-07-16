@@ -3,6 +3,7 @@
 //==============================================//
 var swiper = new Swiper('.swiper', {
   loop: true,
+  loopAdditionalSlides: 0,
 
   // SP
   slidesPerView: 1,
